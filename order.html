@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html en="en-US">
+    <head>
+        <title>Morning Cookies</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/order.css">
+        <link rel="icon" type="image/png" href="images/icon.png">
+    </head>
+    <body>
+        <header>
+            <a href="cookie.html">
+                <img src="images/Logo White.png">
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Weekly Cookie</a></li>
+                <li><a href="order.html">Online Order</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Batch Rewards</a></li>
+                <li><a href="#">Our Story</a></li>
+            </ul>
+        </nav>
+        <h1>Order Some Today</h1>
+        <form id="cookie-order" method="post" name="cookie-order" target="_blank" action="https://www.w3schools.com/action_page.php">
+            <div class="row">
+                <div class="input">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone: </label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+            </div>
+            
+            <fieldset class="row">
+                <legend>Location</legend>
+                <div class="row">
+                    <div class="input">
+                        <input type="radio" name="location" value="ottumwa" id="ottumwa" >
+                        <label for="ottumwa">Ottumwa</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="location" value="fairfield" id="fairfield" checked>
+                        <label for="fairfield">Fairfield</label>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="location" value="albia" id="albia">
+                        <label for="albia">Albia</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div>
+                <label for="delivery">Delivery: </label>
+                <input type="checkbox" name="delivery" id="delivery">
+            </div>
+            <fieldset class="row">
+                <div>
+                    <label for="type">Type:</label>
+                    <select name="type" id="type" size="5">
+                        <option value="None" selected disabled>Cookie Type</option>
+                        <option value="Snickerdoodles">Snickerdoodles</option>
+                        <option value="Chocolate Chip">Chocolate Chip</option>
+                        <option value="Oatmeal Raisin">Oatmeal Raisin</option>
+                        <option value="Gingersnaps">Gingersnaps</option>
+                    </select>	
+                    <label for="amount">Amount: </label>
+                    <input type="number" min="0" placeholder="Counted in Dozens">
+                </div>
+            </fieldset>
+            <fieldset class="row">
+                <legend>Notes for cheif</legend>
+                <textarea id="note" name="note" rows="2" cols="50"></textarea>
+            </fieldset>
+            <fieldset class="row">
+                <legend>Tip</legend>
+                <div id="tip-box">
+                    <label for="tip">Percentage:</label>
+                    <input id="tip" name="tip" type="range" min="0.01" max="0.30" step="0.01">
+                </div>
+            </fieldset>
+            <div class="row" style="padding:10px;">
+                <input type="submit" value="Submit">
+            </div>
+        </forms>
+    </body>
+</html>
